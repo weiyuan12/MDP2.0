@@ -1,3 +1,3 @@
 BUFF_SIZE = 65536
-HOST_ADDR = ('192.168.14.14', 5005)
+HOST_ADDR = ('192.168.33.33', 5005)
 REQ_STREAM = b"stream_request"

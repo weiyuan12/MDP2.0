@@ -25,6 +25,11 @@ def turn(world: World, start: Vector, instruction: TurnInstruction) -> list[Vect
         case (Direction.NORTH, TurnInstruction.FORWARD_LEFT):
             x = start.x
             y = start.y - world.robot.south_length + offset
+            print(f"[Debug]:  {world} {turning_radius} {Vector(
+                    Direction.WEST,
+                    x - turning_radius - world.robot.east_length + offset,
+                    y + turning_radius,
+                )} {x - turning_radius} {y}" )
             return __curve(
                 world,
                 turning_radius,
@@ -281,6 +286,7 @@ def turn(world: World, start: Vector, instruction: TurnInstruction) -> list[Vect
 def __curve(
     world: World,
     turning_radius: int,
+    end,
     centre_x: int,
     centre_y,
     quadrant: int,

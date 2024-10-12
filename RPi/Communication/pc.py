@@ -16,7 +16,7 @@ from Communication.link import Link
 
 class PC(Link):
     def __init__(self):
-        self.host = "192.168.14.14"
+        self.host = "192.168.33.33"
         self.port = 5000
         self.connected = False
         self.server_socket = None

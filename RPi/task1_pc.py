@@ -21,7 +21,7 @@ class Task1PC:
         self.stream_thread = None
 
         # self.pc_dropped = self.manager.Event()
-        self.host = "192.168.14.14"
+        self.host = "192.168.33.33"
         self.port = 5000
         self.client_socket = None
 

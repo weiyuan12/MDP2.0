@@ -79,7 +79,7 @@ class Android(Link):
         """
         # Initialize super class's init.
         super().__init__()
-        self.hostId = "192.168.14.14"
+        self.hostId = "192.168.33.33"
         # UUID to be generated, but can just use the default one - Bryan
         self.uuid = (
             "00001101-0000-1000-8000-00805f9b34fb"  # Default but should try generated

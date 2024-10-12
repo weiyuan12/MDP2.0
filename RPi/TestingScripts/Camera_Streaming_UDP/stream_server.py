@@ -12,7 +12,7 @@ class StreamServer:
     # define constants.
     def define_constants(self):
         self.BUFF_SIZE = 65536
-        self.HOST_ADDR = ("192.168.14.14", 5005)
+        self.HOST_ADDR = ("192.168.33.33", 5005)
         self.REQ_STREAM = b"stream_request"
 
     def __init__(self):
